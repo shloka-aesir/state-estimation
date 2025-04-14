@@ -31,7 +31,7 @@ def get_A(dt):
     return A
 
 # B matrix
-def get_B(dt):
+def get_B(dt): # inegrate accel in A
     B = np.array([
         [0.5*(dt**2), 0, 0],
         [0, 0.5*(dt**2), 0],
